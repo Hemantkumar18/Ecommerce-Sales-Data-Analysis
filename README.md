@@ -83,7 +83,6 @@ SQL queries were written to calculate:
 | Sales by Order Status | Order outcome breakdown |
 | Monthly Sales | Sales trend over time |
 
-All queries are in [`SQL/Ecommerce_Sales_Queries.sql`](SQL/Ecommerce_Sales_Queries.sql).
 
 ---
 
