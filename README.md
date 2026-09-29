@@ -8,7 +8,7 @@ An end-to-end data analytics project that takes raw e-commerce order data throug
 
 ## Dashboard Preview
 
-Snapshot of the Dashboard.png
+![E-Commerce Sales Dashboard](Screenshots/Ecommerce_Sales_Dashboard.png)
 
 ---
 
