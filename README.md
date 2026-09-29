@@ -1,55 +1,94 @@
-# Ecommerce-Sales-Data-Analysis
+# E-Commerce Sales Data Analysis | Python, MySQL & Power BI
 
-# 📌 Project Overview
+An end-to-end data analytics project that takes raw e-commerce order data through cleaning in Python, SQL analysis in MySQL, and an interactive Power BI dashboard to understand **sales performance, profit, and customer ordering patterns**.
 
-This is an end-to-end E-Commerce Sales Data Analysis project using Python, Pandas, MySQL, and Power BI.
+**Tech stack:** Python · Pandas · NumPy · Jupyter Notebook · MySQL · SQL · Power BI · Excel
 
-The project starts with raw e-commerce data, cleans and analyzes the data using Python/Pandas, performs SQL analysis using MySQL, and presents the results through an interactive Power BI dashboard.
+---
 
-# 🛠️ Tools & Technologies
+## Dashboard Preview
 
-- Python
-- Pandas
-- NumPy
-- Jupyter Notebook
-- MySQL
-- SQL
-- Microsoft Power BI
-- Excel
+![E-Commerce Sales Dashboard](Screenshots/Ecommerce_Sales_Dashboard.png)
 
-# 🔄 Project Workflow
+---
 
-Raw Data → Python/Pandas → MySQL → Power BI
+## Business Problem
 
-# 1. Python & Pandas
-- Loaded the raw Excel dataset
-- Explored the data
-- Checked missing values
-- Checked duplicate records
-- Cleaned and transformed the data
-- Converted data types
-- Created calculated columns
-- Prepared the cleaned dataset for analysis
+An e-commerce business needs a clear view of how it is performing. This project answers questions a sales or operations team would ask:
 
-# 2. MySQL
-Used MySQL to perform SQL-based analysis, including:
-- Total Sales
-- Total Profit
-- Total Orders
-- Sales by Category
-- Sales by Product
-- Sales by City
-- Sales by Payment Mode
-- Sales by Order Status
-- Monthly Sales
+- What are the **total sales, profit, and number of orders**?
+- What is the **average order value**?
+- Which **categories and products** drive the most sales?
+- Which **cities** bring the most revenue?
+- Which **payment modes** do customers prefer?
+- How do sales change **month by month**?
+- How are orders distributed by **order status**?
 
-# 3. Power BI
-Created an interactive E-Commerce Sales Dashboard containing:
+---
 
-- Total Profit
-- Total Sales
-- Total Orders
-- Average Order Value
+## Key Metrics (Power BI Dashboard)
+
+| KPI | Value |
+|---|---:|
+| Total Sales | 3.17M |
+| Total Profit | 633.16K |
+| Total Orders | 293 |
+| Average Order Value | 10.80K |
+
+---
+
+## Workflow
+
+```text
+Raw Excel Data
+      ↓
+Python / Pandas  →  Cleaning, transformation, calculated columns
+      ↓
+MySQL            →  SQL business analysis
+      ↓
+Power BI         →  Interactive dashboard
+```
+
+---
+
+## 1. Data Cleaning & Preparation (Python)
+
+Done in Jupyter Notebook using Pandas and NumPy:
+
+- Loaded the raw Excel dataset and explored its structure
+- Checked and handled missing values
+- Checked and removed duplicate records
+- Cleaned and standardized inconsistent values
+- Converted columns to the correct data types
+- Created calculated columns for analysis
+- Prepared the cleaned dataset for SQL and Power BI
+
+---
+
+## 2. SQL Analysis (MySQL)
+
+SQL queries were written to calculate:
+
+| Analysis | Description |
+|---|---|
+| Total Sales | Overall revenue |
+| Total Profit | Overall profit |
+| Total Orders | Number of orders |
+| Sales by Category | Best and weakest categories |
+| Sales by Product | Top-selling products |
+| Sales by City | Highest-revenue locations |
+| Sales by Payment Mode | Preferred payment methods |
+| Sales by Order Status | Order outcome breakdown |
+| Monthly Sales | Sales trend over time |
+
+All queries are in [`SQL/Ecommerce_Sales_Queries.sql`](SQL/Ecommerce_Sales_Queries.sql).
+
+---
+
+## 3. Power BI Dashboard
+
+An interactive dashboard with **KPI cards** (Total Sales, Total Profit, Total Orders, Average Order Value) and visuals for:
+
 - Sales by Month
 - Sales by Category
 - Sales by Product
@@ -57,31 +96,51 @@ Created an interactive E-Commerce Sales Dashboard containing:
 - Sales by Payment Mode
 - Sales by Order Status
 
-# 📊 Dashboard KPIs
+---
 
-| KPI | Value |
-|---|---:|
-| Total Profit | 633.16K |
-| Total Sales | 3.17M |
-| Total Orders | 293 |
-| Average Order Value | 10.80K |
-
-# 📂 Project Structure
+## Repository Structure
 
 ```text
 Ecommerce-Sales-Data-Analysis/
 │
 ├── Dataset/
-│   └── Ecommerce_Unclean_2026.xlsx
+│   └── Ecommerce_Unclean_2026.xlsx           # Raw dataset
 │
 ├── Python/
-│   └── E_Commerce_Sales_Analytics.ipynb
+│   └── E_Commerce_Sales_Analytics.ipynb      # Cleaning & transformation
 │
 ├── SQL/
-│   └── Ecommerce_Sales_Queries.sql
+│   └── Ecommerce_Sales_Queries.sql           # MySQL analysis queries
 │
 ├── PowerBI/
-│   └── Ecommerce_Sales_Dashboard.pbix
+│   └── Ecommerce_Sales_Dashboard.pbix        # Power BI dashboard
 │
-├── Screenshots/
-│   └── Ecommerce_Sales_Dashboard.png
+└── Screenshots/
+    └── Ecommerce_Sales_Dashboard.png         # Dashboard screenshot
+```
+
+---
+
+## How to Run
+
+1. Clone the repository.
+2. Open `Python/E_Commerce_Sales_Analytics.ipynb` in Jupyter Notebook and run all cells (requires `pandas`, `numpy`).
+3. Load the cleaned data into MySQL and run `SQL/Ecommerce_Sales_Queries.sql`.
+4. Open `PowerBI/Ecommerce_Sales_Dashboard.pbix` in Power BI Desktop.
+
+---
+
+## Skills Demonstrated
+
+- **Python:** data cleaning, type conversion, calculated columns (Pandas, NumPy)
+- **SQL / MySQL:** aggregation, grouping, business analysis queries
+- **Power BI:** KPI cards, interactive dashboards, data visualization
+- **Analytics:** turning raw sales data into business insights
+
+---
+
+## Author
+
+**Hemant Kumar Gavaria** — Aspiring Data Analyst
+
+[LinkedIn](https://www.linkedin.com/in/hemantkumar-g) · [GitHub](https://github.com/Hemantkumar18)
